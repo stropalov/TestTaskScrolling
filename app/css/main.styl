@@ -1,0 +1,117 @@
+bcg_light = #FAFAFA
+description_text = #b7b7b7
+/*========================================================================*/
+/*	HTML elements														  */
+/*========================================================================*/
+
+body 
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
+    font-size: 16pt
+    line-height: 1.7em
+    color: #000
+    background-color: bcg_light
+    width: 100%
+    background: url("../images/bg.jpg") no-repeat
+    background-position: center center
+    background-repeat:  no-repeat
+    background-attachment: fixed
+    background-size:  cover
+    
+a,
+p
+	font-family: 'Roboto', sans-serif
+	font-weight: 300
+
+ul 
+	li 
+		list-style: none
+
+/*========================================================================*/
+/*	Buttons         													  */
+/*========================================================================*/
+.side-buttons
+    position: fixed
+    top: 5px
+    left: 5px
+    button
+            font-size: 13px
+            color: #fff
+            background-color: rgba(0,0,0, .4)
+           
+/*========================================================================*/
+/*	Slider section   													  */
+/*========================================================================*/
+.slider
+    margin-top: 20%
+    .slides
+        text-align: center
+        padding-left: 0
+        @media screen and (max-width: 1000px)
+            text-align: justify
+        @media screen and (max-width: 690px)
+            text-align: center
+        li
+            display: inline-block
+            padding: 20px
+            margin: 10px 100px
+            max-width: 300px
+            min-width: 190px
+            width: 300px
+            background-color: #fff
+            -webkit-transition: all 0.2s ease-out
+            -moz-transition: all 0.2s ease-out
+            -o-transition: all 0.2s ease-out
+            -ms-transition: all 0.2s ease-out
+            transition: all 0.2s ease-out
+            @media screen and (max-width: 1600px)
+                margin: 10px 80px
+                width: 280px
+            @media screen and (max-width: 1400px)
+                margin: 10px 60px
+                width: 250px
+            @media screen and (max-width: 1200px)
+                margin: 10px 50px
+                width: 210px
+            @media screen and (max-width: 1000px)
+                margin: 10px 60px
+                width: 280px
+            @media (min-width: 690px) and (max-width: 850px)
+                margin: 10px 50px
+                width: 220px
+            img
+                width: 100%
+                height: 150px
+                @media screen and (max-width: 1000px)
+                    height: 140px
+                @media screen and (max-width: 500px)
+                    height: 120px
+                @media screen and (max-width: 400px)
+                    height: 100px
+            .stars
+                height: 12px
+                margin: 5px 0
+                line-height: 1
+                text-align: center
+                .star
+                    display: inline-block
+                    height: 100%
+                    width: 12px
+                    &.star-active
+                        background: url("../images/star_active.png") no-repeat
+                    &.star-inactive
+                        background: url("../images/star_inactive.png") no-repeat
+                    
+            .text-wrap
+                h1
+                        font-size: 12px
+                        text-transform: uppercase
+                        text-align: center
+                        margin: 10px 0 0 0
+                p
+                    font-size: 11px
+                    line-height: 1.8em
+                    color: description_text
+                    text-align: justify
+                    margin-top: 0
+            
